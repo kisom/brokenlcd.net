@@ -41,9 +41,9 @@ two AudioFile instances, returns the filename of the file that should
 be removed (but can be easily adapted to return the higher quality
 of the two).
 * in progress:
-    * orglib.py - tag-based music library organisation. currently a blank
-    file in the repository, mostly to remind me to actually do something
-    with it.
+0. orglib.py - tag-based music library organisation. currently a blank
+file in the repository, mostly to remind me to actually do something
+with it.
 
 itun
 ----
@@ -138,8 +138,6 @@ gave some interesting results. it does rudimentary stock analysis,
 identifies interesting news items, and builds its social network. it 
 uses twitter for data collection and was my first foray into natural
 language processing and data mining.
-
-* various wargames code i've accumulated
 
 * the [devio.us](http://devio.us) admin scripts that run and maintain 
 the devio.us shell server, which as of early 2011 had over 5,000 users.

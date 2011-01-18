@@ -1,26 +1,27 @@
 .:[ the openbsd pf for SOHO users ]:.
+=====================================
 author: kisom <kisom@devio.us>
-
+------------------------------
 
 
 0x00 Introduction
-=================
+-----------------
 
 A word of caution: this guide is based on OpenBSD 4.7. 
-	*** The pf syntax between previous versions of OpenBSD
-	and 4.7 has changed DRASTICALLY in some cases. Therefore,
-	besides the fact that it is just a good idea, I HIGHLY
-	recommend you use the latest version of OpenBSD on your
-	firewall system. ***
+
+* The pf syntax between previous versions of OpenBSD and 4.7 has changed 
+DRASTICALLY in some cases. Therefore, besides the fact that it is just a good 
+idea, I HIGHLY recommend you use the latest version of OpenBSD on your 
+firewall system. *
 
 OpenBSD is a phenomenal operating system guided by the philosophy of doing
 things right, local correctness, stability, and security. 
 
-why use pf? what is pf?
+`why use pf? what is pf?` one day i'll get around to answering this...
 
 
 0x01 hardware selection / sample hardware
-=========================================
+-----------------------------------------
 
 A system running only pf and OpenBSD is a very lean system. The hardware 
 required is therefore minimal. The Soekris net4501 is what I am currently 
@@ -30,8 +31,8 @@ CompactFlash card. You might consider using an older machine with as many
 NICs as you need segments - hard drive size is not important, and RAM can be 
 in the range of 64M on up (128-256 is a comfortable range for most setups).
 
-Some quick terminology for labeling interfaces is in order. I use the following
-terms to describe interfaces:
+Some quick terminology for labeling interfaces is in order. I use the 
+following terms to describe interfaces:
 
 	RED:	connection to the outside world, aka the link to "the wild."
 	GREEN:	connection to the inside network, aka the link to your LAN.
@@ -55,15 +56,15 @@ a vpn1401 hardware crypto accelerator PCI card and a Intel PRO/Wireless 2200
 Before you install OpenBSD on your firewall, you should answer the following
 questions:
 
-	1. What does my network architecture look like?
-	2. How many users will my firewall be supporting? Is my firewall
-	hardware up to the task? Keeping state on a number of connections
-	will increase your need for RAM, for example.
-	3. For any machines that will be in an ORANGE network, what are their
-	MAC addresses and what IP addresses will they have?
-	4. Is the firewall machine going to have a monitor and keyboard 
-	attached, or will I be using a serial console? (Serial console set up
-	in OpenBSD is covered in OpenBSD FAQ 7.6.)
+1. What does my network architecture look like?
+2. How many users will my firewall be supporting? Is my firewall
+hardware up to the task? Keeping state on a number of connections
+will increase your need for RAM, for example.
+3. For any machines that will be in an ORANGE network, what are their
+MAC addresses and what IP addresses will they have?
+4. Is the firewall machine going to have a monitor and keyboard 
+attached, or will I be using a serial console? (Serial console set up
+in OpenBSD is covered in OpenBSD FAQ 7.6.)
 
 It might be wise to write up the dhcpd.conf that you will be using ahead of
 time, or at least plan it out, so that you have any fixed-address hosts set
@@ -71,7 +72,7 @@ up.
 	
 
 0x02 pfctl and pf.conf
-======================
+----------------------
 
 The firewall is written up in /etc/pf.conf, and is controlled using the
 program pfctl. As usual, complete documentation may be found in the man
@@ -94,33 +95,33 @@ When you run pfctl, you will need to specify which file to use. The rc scripts
 are set up to automatically use /etc/pf.conf but any time you manually invoke
 pfctl, you will need to specify the file. For example,
 
-pfctl -f /etc/pf.conf
+`pfctl -f /etc/pf.conf`
 
 will enable the firewall using /etc/pf.conf (note that the -e is optional),
 whereas to disable the firewall,
 
-pfctl -d /etc/pf.conf
+`pfctl -d /etc/pf.conf`
 
 One of the things you will want to do often is check your pf.conf for proper
 syntax, which you would do with
 
-pfctl -n -f /etc/pf.conf
+`pfctl -n -f /etc/pf.conf`
 
 pf.conf is a simple flat text file read from beginning to end. The last match
 for a rule or definition is the match that is used.
 
 
 0x03 the initialization: macros and options
-===========================================
+-------------------------------------------
 
 Much like computer languages allow the use of variables, OpenBSD allows the
 use of macros. (For those of you who speak perl, s/macros/shell variables/
 as they are pretty much eqivalent, except that macros do not change during
 runtime.) These are extremely useful in defining the network interfaces:
 
-RED_IF="sis2"
-ORANGE_IF="sis1"
-GREEN_IF="sis0"
+    RED_IF="sis2"
+    ORANGE_IF="sis1"
+    GREEN_IF="sis0"
 
 There are some cool ways to use interface macros:
 	($RED_IF) 		will use the address of the interface
@@ -130,14 +131,14 @@ There are some cool ways to use interface macros:
 
 Another use for macros might be to describe specific hosts:
 
-SSH_HOST="192.168.5.1"
+`SSH_HOST="192.168.5.1"`
 
 Lists are also allowed; a list is specified like such:
-"{ value0, value1, value2 }"
+`"{ value0, value1, value2 }"`
 
 Lists may be specified in a macro as well:
 
-ALLOWED_PORTS="{ ssh, dns, http, https }"
+`ALLOWED_PORTS="{ ssh, dns, http, https }"`
 
 All of these macro definitions should be at the top of the file, because they
 cannot be used until they have been defined.
@@ -145,23 +146,23 @@ cannot be used until they have been defined.
 After defining the macros, you can specify any runtime options. Runtime options
 are set using
 
-set <option> <value>
+`set <option> <value>`
 
 Some notable options are 
 
-set block-policy <value>
+`set block-policy <value>`
 	block:	drop packets
 	return:	TCP RST / ICMP Unreachable sent for blocked packets
 
-set loginterface <interface>
+`set loginterface <interface>`
 	# defines which interface to log packets on
 
-set skip on <interface>
+`set skip on <interface>`
 	# packet filtering disabled on <interface>
 
 
 0x04 scrubbing and normalization
-================================
+--------------------------------
 
 Untouched network traffic can present certain security risks for systems:
 outgoing packets may be sniffed for content or information that may be used
@@ -170,8 +171,8 @@ problems with clients. Not all of these security problems may be solved by the
 firewall, but using packet normalization you can mitigate a lot of problems.
 In pf, this is called packet scrubbing, and is set up using the scrub keyword:
 
-match in on $INTERFACE scrub (scrub options)
-match out on $INTERFACE scrub (scrub options)
+`match in on $INTERFACE scrub (scrub options)`
+`match out on $INTERFACE scrub (scrub options)`
 
 The scrub options I use are
 	random-id: randomises the packet's IPID
@@ -180,8 +181,8 @@ The scrub options I use are
 
 Applied to the previous statements:
 
-match in on $INTERFACE scrub (reassemble-tcp no-df)
-match out on $INTERFACE scrub (random-id no-df reassemble-tcp)
+`match in on $INTERFACE scrub (reassemble-tcp no-df)`
+`match out on $INTERFACE scrub (random-id no-df reassemble-tcp)`
 
 It is a good idea to normalise incoming and outgoing traffic by preventing
 fragmented packets (which may be used in an attempt to circumvent the firewall
@@ -192,13 +193,13 @@ also helps to prevent NAT enumeration, further preventing any information
 about your network leaking out.
 
 Another option is the antispoof directive. To quote from pf.conf(5):
-     The antispoof directive expands to a set of filter rules which will block
-     all traffic with a source IP from the network(s) directly connected to
-     the specified interface(s) from entering the system through any other
-     interface.
+> The antispoof directive expands to a set of filter rules which will block
+> all traffic with a source IP from the network(s) directly connected to
+> the specified interface(s) from entering the system through any other
+> interface.
 
 For example:
-antispoof for lo0
+`antispoof for lo0`
 
 This will however interfere with any packets sent over the loopback to
 network interfaces. This shouldn't apply on your firewall machine, but
@@ -206,7 +207,7 @@ if you run pf on any servers inside the network, you should be aware of this.
 
 
 0x05 setting up NAT and redirection
-===================================
+-----------------------------------
 
 Network Address Translation (NAT) is a useful security mechanism as well as a 
 practical means for network connection sharing. In terms of security, it allows 
@@ -226,7 +227,7 @@ appropriate IP version.
 
 NAT rules are easy to set up:
 
-match out on $RED_IF from $GREEN_IF:network nat-to ($RED_IF)
+`match out on $RED_IF from $GREEN_IF:network nat-to ($RED_IF)`
 
 This tells pf to match all packets coming out on the RED interface originating
 from addresses that orinate inside the GREEN network and translate them to 
@@ -241,8 +242,8 @@ play - by randomising IPIDs you can help defeat such an analysis.
 To set up a port forward (redirect), you would use a redirect via the rdr-to
 method in a pass rule (pass rules will be covered more in the next chapter):
 
-pass in on $RED_IF from any to ($RED_IF) port ssh modulate state \
-	$SSH_HOST
+`pass in on $RED_IF from any to ($RED_IF) port ssh modulate state \`
+`	$SSH_HOST`
 
 The ! keyword is the NOT operator; this rule tells pf that for any packets
 coming in on the RED interface that do not originate from the RED interface
@@ -256,7 +257,7 @@ to actually the pass the packets for the firewall.
 
 
 0x06 firewall actions - block, pass, log, and quick
-===================================================
+---------------------------------------------------
 
 pf uses two keywords to pass traffic in and out of the firewall - 
 
@@ -270,7 +271,7 @@ There are two actions that may be applied to traffic:
 
 The first rule should be a default deny for incoming packets:
 
-block in on $RED_IF
+`block in on $RED_IF`
 
 This will automatically block packets coming into the firewall. Using the
 last-matching behaviour of pf, you now should explicitly tell the firewall
@@ -280,9 +281,9 @@ For a small business or home firewall, you probably want a default allow on
 packets coming into and out of the GREEN interface, and a default allow on
 packets leaving the RED interface:
 
-pass out on $RED_IF
-pass in on $GREEN_IF
-pass out on $GREEN_IF
+`pass out on $RED_IF`
+`pass in on $GREEN_IF`
+`pass out on $GREEN_IF`
 
 Now you can begin to specify which packets coming into the firewall should be
 allowed (if any) and which packets leaving the firewall should be blocked. You
@@ -290,20 +291,20 @@ can also set up explicit blocks on traffic on the GREEN interface. For example,
 to allow SSH into the firewall (required if you use the afore-mentioned 
 redirection example):
 
-pass in on $RED_IF inet from any to ($RED_IF) port ssh
+`pass in on $RED_IF inet from any to ($RED_IF) port ssh`
 
 The inet tells the firewall to only allow IPv4 packets in. You can use inet6
 to allow IPv6 packets; you may specify both as a list:
 
-pass in on $RED_IF "{ inet, inet6 }" from any to ($RED_IF) port ssh
+`pass in on $RED_IF "{ inet, inet6 }" from any to ($RED_IF) port ssh`
 
 You can specify the one of the two modifiers after the direction, i.e.
 
-pass in log on $RED_IF inet from any to ($RED_IF) port ssh
+`pass in log on $RED_IF inet from any to ($RED_IF) port ssh`
 
 
 0x07 state: keep state and modulate state
-=========================================
+-----------------------------------------
 
 If you look at the previous rules, you might be curious how traffic is 
 supposed to return to clients behind the firewall - for example, a client
@@ -346,11 +347,11 @@ it must track, the more the system will be taxed.
 If you do not want a rule to create a state entry, you can use the no state
 option:
 
-pass out on $RED_IF no state
+`pass out on $RED_IF no state`
 
 Another option is to modulate state:
 
-pass out on $RED_IF modulate state
+`pass out on $RED_IF modulate state`
 
 This will create random TCP sequence numbers for each end of the connection. 
 Modulating state will only work on TCP connections.
@@ -362,9 +363,9 @@ around this by noting the destination and source IP addresses and the time
 that packets are sent and received. After a certain timeout period, the state
 is cleared. This is how with the default rules list in the previous section
 you can receive ICMP echo replies when you ping out. If you don't believe me,
-add the following rule after the 'pass out on $RED_IF' rule:
+add the following rule after the 'pass out on $RED\_IF' rule:
 
-pass out on $RED_IF inet proto icmp no state
+`pass out on $RED_IF inet proto icmp no state`
 
 For increased security, it is a good idea to modulate state on TCP connections
 where possible.
@@ -392,8 +393,8 @@ synproxy state). These options include
 
 For example, to limit the system to 100 SSH connections:
 
-pass in on $RED_IF proto tcp from any to ($RED_IF) port ssh \
-	modulate state (max 100)
+`pass in on $RED_IF proto tcp from any to ($RED_IF) port ssh \`
+`	modulate state (max 100)`
 
 The source-track keyword tells pf how to keep track of states per source IP:
 
@@ -416,35 +417,35 @@ limit how many sessions a single source IP can establish. For example, if you
 want to limit a single host from creating more than five sessions to your
 webserver:
 
-pass in on $RED_IF proto tcp from any to ($RED_IF) port http \
-	modulate state (source-track rule, max-src-states 5)
+`pass in on $RED_IF proto tcp from any to ($RED_IF) port http \`
+`	modulate state (source-track rule, max-src-states 5)`
 
 
 
 0x08 tables
-===========
+-----------
 
 Tables are used to hold lists of IP addressed (both IPv4 and IPv6) and are
 extremely fast. To quote the PF FAQ:
-	"...the lookup time on a table holding 50,000 addresses is only 
-	slightly more than for one holding 50 addresses."
+> "...the lookup time on a table holding 50,000 addresses is only 
+> slightly more than for one holding 50 addresses."
 
 You can use tables in filter rules (as either source or destination), and in
 translation rules as the translation and/or redirection addresses. 
 
 You specify a table using the table directive:
 
-table <blacklist>  { address1, address2, ..., addressn }
+`table <blacklist>  { address1, address2, ..., addressn }`
 
 and use them in rules as such:
 
-block in quick on $RED_IF from <blacklist> to ($RED_IF)
+`block in quick on $RED_IF from <blacklist> to ($RED_IF)`
 
 You can also modify a table using pfctl:
 
-pfctl -t blacklist -T add 1.2.3.4/8
-pfctl -t blacklist -T delete 1.2.3.4/8
-pfctl -t blacklist -T show
+`pfctl -t blacklist -T add 1.2.3.4/8`
+`pfctl -t blacklist -T delete 1.2.3.4/8`
+`pfctl -t blacklist -T show`
 
 which adds new entires, deletes entries, and shows the table, respectively.
 It is trivial to write a script to scan logfiles and add or delete addresses
@@ -454,10 +455,10 @@ Addresses in the tables may be either actual dotted quad / IPv6 numeric
 addresses, hostnames, interface names, or the self keyword. Addresses are
 matched using the most narrow match - i.e. in the case
 
-table <whitelist> { 10.1.0.0/16, !10.1.19.0/24 }
+`table <whitelist> { 10.1.0.0/16, !10.1.19.0/24 }`
 
-block in on $RED_IF
-pass in on $RED_IF from <blacklist> to any
+`block in on $RED_IF`
+`pass in on $RED_IF from <blacklist> to any`
 
 If the firewall receives traffic from 10.1.19.202, it will be blocked, because
 the network 10.1.19.0/24 is a narrower definition than 10.1.0/16; note the use
@@ -473,20 +474,20 @@ may be used to having four types of anchors. As of OpenBSD 4.7, the NAT
 and redirect syntax changed, converting translation rules to general match
 rules. In OpenBSD 4.7's version of pf, there is only one type of anchor rule:
 
-anchor anchor_name
+    anchor anchor_name
 
 Rules will be loaded into pf.conf at the anchor point. It is important to
 remember this, because if rules loaded at the anchor are matched later in the
 file, the later rules will govern the fate of the packet. For example, if you
 loaded the rule
 
-pass in on $RED_IF from any to ($RED_IF) port ssh
+`pass in on $RED_IF from any to ($RED_IF) port ssh`
 
 into an anchor, and your pf.conf included
 
-anchor FIREWALL_HOLES
+`anchor FIREWALL_HOLES`
 ...
-block in on $RED_IF from any to ($RED_IF) port ssh 
+`block in on $RED_IF from any to ($RED_IF) port ssh `
 
 SSH would still be blocked. This is a very simple rule but it highlights the
 need to keep track of what you are passing and blocking through the firewall,
@@ -497,22 +498,22 @@ pfctl, and via an inline rule declaration.
 
 The load rule tells pf to load rules from the specified file. It looks like:
 
-anchor firewall_holes
-load anchor firewall_holes from "/etc/pf/holes.conf"
+`anchor firewall_holes`
+`load anchor firewall_holes from "/etc/pf/holes.conf"`
 
 The file holes.conf should specify valid pf rules that will be loaded into
 the firewall in the anchor section. 
 
 Rules may be specified inline as well, to populate an anchor at runtime:
 
-anchor "firewall_holes" {
-	# list of rules
-}
+    anchor "firewall_holes" {
+    	    # list of rules
+    }
 
 The last option is to use pfctl to add rules:
 
-pfctl -a firewall_holes -f ${HOME}/pf/firewall_holes.conf
+`pfctl -a firewall_holes -f ${HOME}/pf/firewall_holes.conf`
 # or
-cat ${HOME}/pf/firewall_holes.conf | pfctl -a firewall_holes -f -
+`cat ${HOME}/pf/firewall_holes.conf | pfctl -a firewall_holes -f -`
 
  
