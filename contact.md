@@ -1,6 +1,17 @@
 .:[ contact info ]:.
 ====================
 
+
+openpgp
+-------
+my openpgp key has current contact information in it.
+
+`development key:`
+    pub   4096R/B7B720D6 2010-10-30 [expires: 2015-10-29]  
+      fpr  9C2B BF53 FB89 50D4 554F  1708 35C8 B8B3 B7B7 20D6   
+    sub   4096R/F73968C2 2010-10-30 [expires: 2015-10-29]   
+
+
 email
 -----
 `Y29kZXJAa3lsZWlzb20ubmV0`   
