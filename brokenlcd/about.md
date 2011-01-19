@@ -9,6 +9,7 @@ _skills_
 * perl, python, c, sh
 * playing with networks
 * software design
+* mad insomnia
 
 _interests_
 -----------
