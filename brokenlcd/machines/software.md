@@ -30,6 +30,19 @@ happily use. dead simple configuration (but highly customisable) through
 _flat_ files, not xml-crap.
 * [awesome](http://awesome.naquadah.org) - the other window manager i use
 happily. the lua scripting is pretty cool.
+* [zsh](http://www.zsh.org) - i spend far too much time in zsh.
+* [irssi](http://www.irssi.org) - there are other irc clients out there?
+(although i have been thinking about giving 
+[ii](http://tools.suckless.org/ii/) a shot. irssi has plugins supporting
+silc and otr, however. combined with [bitlbee](http://www.bitlbee.org),
+it is extremely useful to me. i don't use any fancy themes or scripts 
+though.
+* [snownews](http://kiza.kcore.de/software/snownews/) - rss reader of 
+choice, perfect for keeping up on [undeadly](http://www.undeadly.org) and
+[hacker news](http://news.ycombinator.com).
+* [abook](http://abook.sourceforge.net) - address book application.
+* [calcurse](http://culot.org/calcurse) - curses-based task lists, events,
+and calender.
 
 
 _operating systems_

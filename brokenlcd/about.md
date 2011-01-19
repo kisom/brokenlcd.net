@@ -13,9 +13,11 @@ _skills_
 _interests_
 -----------
 * cryptography
+* audio / music
 * security & privacy
 * sociopolitical issues in the information age
 * coding
+* infrastructure
 
 
 
