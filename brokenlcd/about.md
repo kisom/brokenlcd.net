@@ -21,4 +21,5 @@ _interests_
 * infrastructure
 
 
-
+you may also be interested in details about 
+[how the site was built](/site.html)

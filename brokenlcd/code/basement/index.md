@@ -1,7 +1,7 @@
 .:[ basement ]:.
 ----------------
 
-    int basement(browser_ctx_t ctx) {
-        return EXIT_SUCCESS;
-    }
+[geoip_lookup](gl.tgz) - a python script and shell script combo to do
+geoip lookups on apache access / error logs
+
 
