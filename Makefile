@@ -10,7 +10,7 @@ SITE=brokenlcd
 RHOST=kisom@brokenlcd.net:brokenlcd/
 
 # don't touch - we need this for sw to work properly
-TARGET="$(PWD)/$(site)"
+TARGET="$(PWD)/$(SITE)"
 
 
 ### shouldn't need to modify anything below these lines ###
@@ -21,7 +21,7 @@ site:
 	sw $(TARGET)
 
 install: 
-	rsync -auvz -e "ssh" $(SITE).static/ $(RHOST)
+	rsync -auvz -del -e "ssh" $(SITE).static/ $(RHOST)
 
 clean:
 	rm -rf $(SITE).static
