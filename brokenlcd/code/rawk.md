@@ -14,8 +14,15 @@ the default css, and header and footer templates are taken from sw, as is the
 menu style, so credit is due there.
 
 some of the things i wanted out of rawk:
-    * the generated html should be as clean as possible (something i liked 
-    about sw)
-    * where possible, the user should be able to quickly customise the site
-        * header / footer templates
-        * stylesheet
+0. the generated html should be as clean as possible (something i liked 
+about sw)
+0. where possible, the user should be able to quickly customise the site
+* header / footer templates
+* stylesheet
+0. simplify creating sites - not everything needs to be dynamic!
+0. retake the web for shell users
+
+credits:
+rawk - [Kyle Isom](http://www.brokenlcd.net)
+sw   - [nibble](http://nibble.develsec.org/projects/sw.html)
+
