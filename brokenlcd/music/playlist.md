@@ -1,35 +1,19 @@
 late night coding music
 =======================
 
-this is my playlist for dropping state.
+this is my playlist for dropping state. with the exception of the uplink
+soundtrack (which was never on cd) i keep a copy of each of these cds 
+available, and this is the core collection (ripped to flac) stored on my
+dev machines.
 
-* the uplink soundtrack
-* deftones - adrenaline
-* deftones - deftones
-* deftones - white pony
-* emilíana torrini - love in the time of science
+* emiliana torrini - love in the time of science
 * faithless - outrospective
-* faithless - sunday 8 pm
-* juno reactor - gods & monsters
-* juno reactor - labyrinth
-* massive attack - blue lines
+* hooverphonic - blue wonder power milk
 * massive attack - mezzanine
 * massive attack - protection
-* massive attack - 100th window
-* the orb - bicycles and tricycles
-* portishead - melody nelson
-* portishead - dummy
-* portishead - portishead
+* pink floyd - dark side of the moon
 * radiohead - amnesiac
-* radiohead - kid a
 * radiohead - ok computer
-* radiohead - pablo honey
-* sneaker pimps - becoming x
-* sneaker pimps - bloodsport
-* sneaker pimps - splinter
-* telepopmusik - angel milk
-* telepopmusik - genetic world
-* thievery corporation - mirror conspiracy
-* thievery corporation - richest man in babylon
-* u.n.k.l.e. - never, never land
+
+
 
