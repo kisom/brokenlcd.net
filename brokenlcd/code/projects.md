@@ -3,14 +3,16 @@ current projects
 
 rawk
 ----
-* [github page](https://github.com/kisom/site-tools)
+* [homepage](http://rawk.brokenlcd.net)
 * rawk == *r*age *a*gainst *w*eb framewor*k*s
-* name was originally going to be rawf but that doesn't sound as good
+* name was originally going to be rawf but that doesn't sound as euphonious
 * part of my site-tools package, this was inspired in no small part by
 the suckless webframework [sw](http://nibble.develsec.org/projects/sw.html)
 * i ran into a few issues with sw, so i decided to roll my own tool to do
 things the way i wanted them done.
-* still very much a work in progress
+* still very much a work in progress but is confirmed to work on linux
+* working on checking regexes in default rawkrc to maximise compatibility
+* the homepage has more info
 
 
 surfraw
