@@ -18,13 +18,13 @@ TARGET="$(PWD)/$(SITE)"
 all:	site
 
 site:
-	sw $(TARGET)
+	rawk $(TARGET)
 
 install: 
-	rsync -auvz -del -e "ssh" $(SITE).static/ $(RHOST)
+	rsync -auvz -e "ssh" $(SITE).build/ $(RHOST)
 
 clean:
-	rm -rf $(SITE).static
+	rm -rf $(SITE).build
 
 target-list:
 	@echo "valid targets:"
