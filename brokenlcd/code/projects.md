@@ -4,12 +4,10 @@ current projects
 rawk
 ----
 * [homepage](http://rawk.brokenlcd.net)
-* rawk == *r*age *a*gainst *w*eb framewor*k*s
+* rawk == **r**age **a**gainst **w**eb framewor**k**s
 * name was originally going to be rawf but that doesn't sound as euphonious
-* started out as part of my site-tools package, this was inspired in no small 
-part by the suckless webframework 
-[sw](http://nibble.develsec.org/projects/sw.html)
 * stable and runs on a variety of systems
+* see site for more than you could possibly want to know
 
 
 surfraw
