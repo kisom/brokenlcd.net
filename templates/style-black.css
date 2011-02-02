@@ -7,12 +7,12 @@ body {
 	font-size: 80%;
 	margin: 0;
 	padding: 0;
-        background: #200772;
+        background: #000052;
         background-color: #000000;
 }
 
 /* Header */
-.header { background-color: #200772; border: 0; }
+.header { background-color: #000052; border: 0; }
 .header a { border: 0; color: #ccc; text-decoration: none; }
 .midHeader img { border: 0; }
 
@@ -46,7 +46,7 @@ body {
 #main {
 	max-width: 70em;
 	color: white;
-        background: #200772;
+        background: #000052;
         background-color: #000000;
 	margin: 0 auto 0 2em;
 	padding: 1em 3em 2em 1em;
