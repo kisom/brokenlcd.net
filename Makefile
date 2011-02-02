@@ -9,7 +9,6 @@ SITE=brokenlcd
 #     e.g. foo@spam:baz/
 RHOST=kisom@brokenlcd.net:brokenlcd/
 
-# don't touch - we need this for sw to work properly
 TARGET="$(PWD)/$(SITE)"
 
 
@@ -34,5 +33,5 @@ target-list:
 	@echo " "
 
 
-.PHONY: all clean site-gen
+.PHONY: all clean site 
 
