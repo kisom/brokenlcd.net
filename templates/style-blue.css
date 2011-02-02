@@ -7,11 +7,13 @@ body {
 	font-size: 80%;
 	margin: 0;
 	padding: 0
+        background: #200772;
+        background-color: #200772;
 }
 
 /* Header */
-.header { background-color: #ccc; border: 0; }
-.header a { border: 0; color: #111; text-decoration: none; }
+.header { background-color: #200772; border: 0; }
+.header a { border: 0; color: #ccc; text-decoration: none; }
 .midHeader img { border: 0; }
 
 .headerTitle { font-size: 1.6em; font-weight: bold; margin: 0 0 0 0.5em; padding: 0.5em; }
@@ -20,54 +22,43 @@ body {
 .headerSubTitle { font-size: 0.6em; font-weight: normal; margin-left: 1em; }
 
 /* Side */
+/* modified from sw original by jrick (jrick.devio.us) */
 #side-bar {
-	width: 100%;
-	clear: both;
-	border: 0;
-	margin: 0;
-	padding: 0;
-	background-color: #ddd;
+    clear: both;
+    border: 0;
+    padding-left: 1em;
+    background-color: #226;
 }
 
-#side-bar ul {
-	margin: 0;
-	padding: 0.3em;
-	list-style-type: none;
-	list-style-image: none;
-	border: 0;
+#side-bar a {
+    display: inline;
+    line-height:2.1em;
+    white-space: nowrap;
+    padding: 0.1ex 1ex 0.1em 1ex;
+    color:#ccc;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 1em;
 }
 
-#side-bar li { display: inline; line-height: 1.6em; white-space: nowrap; }
-
-#side-bar ul li a {
-	margin: 0;
-	padding: 0.1em 1ex 0.1em 1ex;
-	color: #336699;
-	background-color: transparent;
-	text-decoration: none;
-	font-size: 1em;
-	border: 0;
-}
-
-#side-bar ul li a:hover { color: #111; text-decoration: none; }
- 
 /* Main Copy */
 #main {
 	max-width: 70em;
-	color: #111;
+	color: white;
+        background: #200772;
 	margin: 0 auto 0 2em;
 	padding: 1em 3em 2em 1em;
 	border: 0;
 }
 
-#main a { color: #336699; text-decoration: none; }
+#main a { color: #aaa; text-decoration: none; }
 #main a:hover { text-decoration: underline; }
 #main h1, #main-copy h2 { color: #666; }
 #main ul { list-style-type: square; }
 
 /* Footer */
 #footer {
-	background-color: #ddd;
+	background-color: #336;
 	color: #111;
 	font-size: 91%;
 	padding: 2em;
@@ -75,8 +66,8 @@ body {
 }
 
 #footer .left { text-align: left; float: left; clear: left; }
-#footer .right { text-align: right; }
-#footer a { color: #111; text-decoration: none; }
+#footer .right { color: white; text-align: right; }
+#footer a { color: #ddd; text-decoration: none; }
 #footer a:hover { text-decoration: underline; }
 
 abbr, acronym { border-bottom: 1px dotted #333; cursor: help; }
