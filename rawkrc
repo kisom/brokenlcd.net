@@ -3,7 +3,7 @@ hdr_tpl="templates/hdr.tpl"
 ftr_tpl="templates/ftr.tpl"
 site_title="a broken lcd"
 site_subtitle="lost in the green on black"
-stylesheet="templates/style.css"
+stylesheet="templates/style-black.css"
 
 # blacklist definition
 bl="^.*\.sh$"                   # don't link to shell files
