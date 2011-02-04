@@ -4,7 +4,7 @@
 
 `/* development-related site for kyle isom */`  
 
-![juno reactor gods & monsters](/images/gods-monsters.png)
+![img: juno reactor gods & monsters](/images/gods-monsters.png)
 
 my development openpgp key is  
 `pub   4096R/B7B720D6 2010-10-30 [expires: 2015-10-29]`  

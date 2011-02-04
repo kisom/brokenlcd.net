@@ -1,7 +1,7 @@
-About this Site
+about this site
 ===============
 
-The source for this site consists of a tree of plaintext files (written in 
+the source for this site consists of a tree of plaintext files (written in 
 vim) containing a somewhat-simplified markdown; each file represents a 
 separate page.
 
@@ -9,9 +9,9 @@ separate page.
 building the header, footer, and menu bar. **rawk** uses 
 **[smu](http://s01.de/~tox/index.cgi/proj_smu)** as its markdown handler.
 
-Generating the html, pushing the built version, and cleaning the directory 
+generating the html, pushing the built version, and cleaning the directory 
 are all handled by a posix makefile.
 
-The source for the site is available on 
+the source for the site is available on 
 **[github](https://github.com/kisom/brokenlcd.net)**.
 

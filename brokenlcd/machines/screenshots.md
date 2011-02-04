@@ -5,7 +5,7 @@ various screenshots.
 
 cmus in action
 --------------
-running cmus on the eeepc under debian squeeze.
+running cmus on the workbox under ubuntu something or other.
 ![cmus running on the eeepc](/images/screenshots/cmus_small.png)   
 [larger version](/images/screenshots/cmus.png)
 
