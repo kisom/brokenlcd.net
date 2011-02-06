@@ -23,3 +23,7 @@ _interests_
 
 you may also be interested in details about 
 [how the site was built](/site.html)
+
+i am proud member of the [eff](https://www.eff.org).    
+![img: eff member badge](images/eff-badge.png)    
+
