@@ -3,6 +3,11 @@ irssi-scripts
 
 documentation for various irssi scripts
 
-[geojoin](geojoin.html)
+the entire repository can be had via
+
+    git clone git://github.com/kisom/irssi-scripts.git
+
+individual script documentation:    
+* [geojoin](geojoin.html)
 
 

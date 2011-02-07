@@ -61,8 +61,8 @@ with it.
 irssi-scripts
 -------------
 * [github page](https://github.com/kisom/irssi-scripts)    
+* [local docs](irssi/index.html)
 * collection of public domain / ISC dual-licensed scripts
-* `geojoin`: GeoIP lookups on joins to list of specified channels
 
 itun
 ----
