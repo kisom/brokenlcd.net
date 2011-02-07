@@ -8,12 +8,17 @@ dev machines.
 
 * emiliana torrini - love in the time of science
 * faithless - outrospective
+* faithless - reverence
 * hooverphonic - blue wonder power milk
+* hooverphonic - a new stereo sound spectacular
+* juno reactor - labyrinth
 * massive attack - mezzanine
 * massive attack - protection
 * pink floyd - dark side of the moon
 * radiohead - amnesiac
 * radiohead - ok computer
+* sneaker pimps - splinter
+* uplink soundtrack    
 
 
 

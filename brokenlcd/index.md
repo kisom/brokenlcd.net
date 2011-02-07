@@ -6,6 +6,8 @@
 
 ![img: juno reactor gods & monsters](/images/gods-monsters.png)
 
+`/* the cover for juno reactor's gods & monsters */`    
+
 my development openpgp key is  
 `pub   4096R/B7B720D6 2010-10-30 [expires: 2015-10-29]`  
 `fpr   9C2B BF53 FB89 50D4 554F  1708 35C8 B8B3 B7B7 20D6`

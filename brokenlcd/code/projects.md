@@ -1,6 +1,10 @@
 current projects
 ================
 
+all of my code is released under a bsd or isc/public domain dual-license 
+unless otherwise noted. i despise the gpl and work very hard to ensure i
+don't have to release restricted code under that license.
+
 rawk
 ----
 * [homepage](http://rawk.brokenlcd.net)
@@ -53,6 +57,12 @@ of the two).
 0. orglib.py - tag-based music library organisation. currently a blank
 file in the repository, mostly to remind me to actually do something
 with it.
+
+irssi-scripts
+-------------
+* [github page](https://github.com/kisom/irssi-scripts)    
+* collection of public domain / ISC dual-licensed scripts
+* `geojoin`: GeoIP lookups on joins to list of specified channels
 
 itun
 ----

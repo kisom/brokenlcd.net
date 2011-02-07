@@ -3,7 +3,7 @@ _weapons of mass development_
 
 most of the tools i use are console-based, as it is much easier for me
 to pull up a new terminal and invoke behaviour through an explicit 
-commandline than to sit around to for a gui to load. i use these on a 
+commandline than to sit around waiting for a gui to load. i use these on a 
 regular basis:
 
 * [tmux](http://tmux.sourceforge.net) - this alone has increased my
@@ -14,8 +14,7 @@ suck like screen.
 * [vim](http://vim.org) - the text editor bestowed upon mankind by raptor
 jesus himself.
 * [nvi](http://www.kotnet.org/~skimo/nvi) - the new vi, i use this for
-editing gnu makefiles so i don't have to screw up my tabstops in vim for
-the braindead behaviour of gmake.
+editing gnu makefiles so i don't have to screw up my tabstops in vim 
 * [surfraw](http://surfraw.alioth.debian.org) - shell user's revolutionary
 front rage against the web. fast cli to the www. 
 * [mutt](http://www.mutt.org) - text-based email client.
@@ -33,10 +32,10 @@ happily. the lua scripting is pretty cool.
 * [zsh](http://www.zsh.org) - i spend far too much time in zsh.
 * [irssi](http://www.irssi.org) - there are other irc clients out there?
 (although i have been thinking about giving 
-[ii](http://tools.suckless.org/ii/) a shot. irssi has plugins supporting
+[ii](http://tools.suckless.org/ii/) a shot.) irssi has plugins supporting
 silc and otr, however. combined with [bitlbee](http://www.bitlbee.org),
 it is extremely useful to me. i don't use any fancy themes or scripts 
-though.
+though (although some scripts are forthcoming).
 * [snownews](http://kiza.kcore.de/software/snownews/) - rss reader of 
 choice, perfect for keeping up on [undeadly](http://www.undeadly.org) and
 [hacker news](http://news.ycombinator.com).
