@@ -9,5 +9,6 @@ the entire repository can be had via
 
 individual script documentation:    
 * [geojoin](geojoin.html)
+* [xosd-notify](xosd.html)
 
 

@@ -45,3 +45,8 @@ lookups, whether it is enabled, and which channels are being watched
 **todo**
 * add whois / info code for whois and info lookups
 
+
+**screenshot**:
+
+![screenshot: geojoin.pl](/images/screenshots/irssi-geojoin_small.png)    
+[larger version](/images/screenshots/irssi-geojoin.png)   

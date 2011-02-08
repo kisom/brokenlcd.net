@@ -11,7 +11,8 @@ rawk
 * rawk == **r**age **a**gainst **w**eb framewor**k**s
 * name was originally going to be rawf but that doesn't sound as euphonious
 * stable and runs on a variety of systems
-* see site for more than you could possibly want to know
+* this site is built using rawk
+* see [site](/site.html) for more than you could possibly want to know
 
 
 surfraw
