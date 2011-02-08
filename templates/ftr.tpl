@@ -1,4 +1,5 @@
 <div id="footer">
+<div class="left">generated on ${date}</div>
 <div class="right">powered by 
 <a href="http://rawk.brokenlcd.net/">rawk</a>
 and 

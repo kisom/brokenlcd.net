@@ -79,7 +79,7 @@ login-fuzzer
 * [github page](https://github.com/kisom/Login-Fuzzer)
 * python script to bruteforce / fuzz logins
 * interface / engine pairing:
-0. interfaces are an interface to a login system, i.e. ssh. written is
+0. interfaces are an interface to a login system, i.e. ssh. written 
 are an echo interface (for debugging / testing) and a python-paramiko
 interface for ssh logins.
 0. engines are password generating engines, i.e. bruteforce and fuzzing.

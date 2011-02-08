@@ -1,0 +1,6 @@
+* fix period in machines/software.html
+* cleanup geojoin
+* short descr in irssi/index.html
+* projects->apod s/22h15/15 minutes after posted/
+* geojoin: fix <>
+
