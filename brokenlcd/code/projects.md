@@ -122,7 +122,7 @@ managers and desktop environments as well as in os x.
 be merged into the main repo.
 * the code is finished and has been working without error for a while 
 (i use it on my work machine to update the wallpaper every night at
-22h15).
+15 minutes after it is posted).
 
 
 pyphone

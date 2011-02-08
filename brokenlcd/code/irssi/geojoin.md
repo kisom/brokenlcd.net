@@ -2,13 +2,14 @@ geojoin.pl
 ----------
 
 **geojoin**: irssi script to get GeoIP data on users joining a channel.     
-**author**: kyle isom <coder@kyleisom.net>     
+**author**: kyle isom <lt;coder@kyleisom.net>gt;     
 **license**: isc / public domain - select whichever is less restrictive in your 
 locale    
 
 latest version can be pulled from 
 [github](https://github.com/kisom/irssi-scripts/tree/master/geojoin)
 or you can clone the entire collection of scripts using:    
+
 `git clone git://github.com/kisom/irssi-scripts.git`
 
 
@@ -19,19 +20,19 @@ or you can clone the entire collection of scripts using:
 
 **usage:**   
 `/load /path/to/geojoin.pl`    
-`/geojoin add <channel list>`    
+`/geojoin add <lt;channel list>gt;`    
 wait for people to join the channel...    
 
 
 **command list:**
-* add \<channels\>: add channels to list to watch
-* del \<channels\>: remove channels from the watch list
+* add \<lt;channels\>gt;: add channels to list to watch
+* del \<lt;channels\>gt;: remove channels from the watch list
 * status: show geojoin's status, including whether it is using country or city 
 lookups, whether it is enabled, and which channels are being watched
 * watchlist: show a list of space-delimited channels being watched
 * use_country: use country lookups
 * use_city: use city record lookups
-* set_citydb \<path\>: specify path to city record database    
+* set_citydb \<lt;path\>gt;: specify path to city record database    
 * disable: disable lookups (preserves watchlist)
 * enable: enable lookups
 * clear: clear watchlist and disables geojoin

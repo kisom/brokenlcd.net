@@ -32,6 +32,20 @@ example commands:
 
 the current settings may be viewed using `/set xosd_`
 
+**setting the position**:
+* the current position is controlled by `xosd_position`
+* the script checks the beginning of the setting string to get the vertical
+position, and the end of the setting string to get the horizontal position
+* vertical values may be: top, middle, center, bottom
+* horizontal values may be: left, middle, center, right
+* for example: `/set xosd_position $position`, valid `$position` values 
+include:
+0. `top_center`
+1. `bottom-left`
+2. `center-right`
+3. `center`
+
+
 **screenshot:**    
 
 ![screenshot: xosd-notify.pl](/images/screenshots/irssi-xosd_small.png)    

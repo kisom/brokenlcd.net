@@ -14,7 +14,7 @@ suck like screen.
 * [vim](http://vim.org) - the text editor bestowed upon mankind by raptor
 jesus himself.
 * [nvi](http://www.kotnet.org/~skimo/nvi) - the new vi, i use this for
-editing gnu makefiles so i don't have to screw up my tabstops in vim 
+editing gnu makefiles so i don't have to screw up my tabstops in vim.
 * [surfraw](http://surfraw.alioth.debian.org) - shell user's revolutionary
 front rage against the web. fast cli to the www. 
 * [mutt](http://www.mutt.org) - text-based email client.
