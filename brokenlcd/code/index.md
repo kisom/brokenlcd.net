@@ -3,8 +3,10 @@
 
 [projects](projects.html) - some of the projects i've been working on
 
-[basement](basement/index.html) - where i shove all the code that doesn't belong
-anywhere else.
+[activity](activity.html) - rss feeds from various coding sites
+
+[basement](basement/index.html) - where i shove all the code that doesn't 
+belong anywhere else.
 
 - - -
 
