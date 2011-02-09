@@ -5,6 +5,14 @@ all of my code is released under a bsd or isc/public domain dual-license
 unless otherwise noted. i despise the gpl and work very hard to ensure i
 don't have to release restricted code under that license.
 
+overlord
+--------
+* [homepage](http://overlord.hack-net.org)
+* development name for a new task manager / calendar
+* ncurses UI with xosd notifications
+* sqlite3-backed
+* collaboration with wally jones
+
 rawk
 ----
 * [homepage](http://rawk.brokenlcd.net)
