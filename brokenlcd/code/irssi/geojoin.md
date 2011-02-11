@@ -20,19 +20,19 @@ or you can clone the entire collection of scripts using:
 
 **usage:**   
 `/load /path/to/geojoin.pl`    
-`/geojoin add <lt;channel list>gt;`    
+`/geojoin add &lt;channel list&gt;`    
 wait for people to join the channel...    
 
 
 **command list:**
-* add \<lt;channels\>gt;: add channels to list to watch
-* del \<lt;channels\>gt;: remove channels from the watch list
+* add &lt;channels&gt;: add channels to list to watch
+* del &lt;channels&gt;: remove channels from the watch list
 * status: show geojoin's status, including whether it is using country or city 
 lookups, whether it is enabled, and which channels are being watched
 * watchlist: show a list of space-delimited channels being watched
 * use_country: use country lookups
 * use_city: use city record lookups
-* set_citydb \<lt;path\>gt;: specify path to city record database    
+* set_citydb &lt;path&gt;: specify path to city record database    
 * disable: disable lookups (preserves watchlist)
 * enable: enable lookups
 * clear: clear watchlist and disables geojoin
