@@ -5,6 +5,12 @@ all of my code is released under a bsd or isc/public domain dual-license
 unless otherwise noted. i despise the gpl and work very hard to ensure i
 don't have to release restricted code under that license.
 
+android development
+-------------------
+i just started learning how to android development, which is also 
+requiring a side trip into learning java, unfortunately. my primary
+interests are in geolocation and augmented reality.
+
 overlord
 --------
 * [homepage](http://overlord.hack-net.org)
@@ -165,7 +171,9 @@ other non-public software i have worked on includes:
 gave some interesting results. it does rudimentary stock analysis, 
 identifies interesting news items, and builds its social network. it 
 uses twitter for data collection and was my first foray into natural
-language processing and data mining.
+language processing and data mining. it is currently being analysed for
+improvements in the social network analysis engine as well as the trend
+identifying engine.
 
 * the [devio.us](http://devio.us) admin scripts that run and maintain 
 the devio.us shell server, which as of early 2011 had over 5,000 users.
