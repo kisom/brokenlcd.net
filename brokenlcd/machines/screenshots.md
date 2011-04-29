@@ -27,3 +27,11 @@ so as not to show off proprietary code.
 [larger version](/images/screenshots/workbox.png)
 
 
+the t410's conky setup
+----------------------
+this shows the conky setup i have running in awesome on the t410.
+the clocked out section is based on my 
+[timecard](https://github.com/kisom/timecard) script.
+![t410 desktop](/images/screenshots/t410-awesome.png)    
+[larger version](/images/screenshots/t410-awesome_small.png)    
+

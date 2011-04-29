@@ -42,6 +42,7 @@ choice, perfect for keeping up on [undeadly](http://www.undeadly.org) and
 * [abook](http://abook.sourceforge.net) - address book application.
 * [calcurse](http://culot.org/calcurse) - curses-based task lists, events,
 and calender.
+* [conky](http://conky.sourceforge.net) - a lightweight system monitor.   
 
 
 _operating systems_
