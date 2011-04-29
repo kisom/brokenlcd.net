@@ -10,6 +10,16 @@ i've been moving to a point in my life where i'm trying to condense
 hardware. i'm down to the following:
 
 
+straylight
+----------
+a lenovo thinkpad t410 that is my primary development machine.
+* ubuntu server, heavily stripped down and running awesome
+* 2.6 ghz i5 
+* 4gb ram
+* 64gb internal ssd
+* 32gb ssd in the drivebay
+
+
 gibson
 ------
 a 2010 aluminum mac mini. it serves as a multimedia machine as well as
