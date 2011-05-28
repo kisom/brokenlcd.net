@@ -5,6 +5,17 @@ all of my code is released under a bsd or isc/public domain dual-license
 unless otherwise noted. i despise the gpl and work very hard to ensure i
 don't have to release restricted code under that license.
 
+percipio
+--------
+working through 
+[the elements of computing systems](http://www1.idc.ac.il/tecs/) 
+but instead of just simulating the computer using the software tools,
+i've taken on myself to realise the computer in hardware.
+* [homepage](https://github.com/kisom/percipio/)
+* [tecs solutions](https://github.com/kisom/tecs/)
+* logic implemented entirely in NAND gates
+* progress updated on [my blog](http://www.kyleisom.net/blog/)  
+
 android development
 -------------------
 i just started learning how to android development, which is also 
@@ -194,6 +205,5 @@ some work on the tcp stack in high school. unfortunately, out of privacy
 concerns, i worked on it under an pseudonym and i don't think i ever 
 actually submitted my code. nonetheless, it gave me valuable insights into
 tcp/ip networking.
-
 
 
