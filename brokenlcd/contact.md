@@ -41,9 +41,7 @@ i run a silc server at freeside.brokenlcd.net:706. it's pretty quiet.
 
 xmpp/jabber:
 ------------
-`aXNvbWtAa3lsZWlzb20ubmV0`
-
-`a3lsZUBreWxlaXNvbS5jb20=` 
+`a3lsZUBkdWtnby5jb20=`
 
 
 skype
