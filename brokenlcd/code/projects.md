@@ -5,6 +5,14 @@ all of my code is released under a bsd or isc/public domain dual-license
 unless otherwise noted. i despise the gpl and work very hard to ensure i
 don't have to release restricted code under that license.
 
+newsread
+--------
+* [homepage](http://hg.kyleisom.net/newsread)    
+* taking some of the NLP lessons from dropsonde and mining news sites for 
+articles i might actually want to read
+* project is in extreme infancy right now, most of the work in on paper
+in my notebooks.
+
 percipio
 --------
 working through 
