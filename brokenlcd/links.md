@@ -3,7 +3,8 @@ __links__
 
 * _[personal site](http://www.kyleisom.net)_ - my personal site
 * _[blog](http://www.kyleisom.net/blog)_ - it's all about the kung-fu
-* _[devio.us](http://devio.us)_ - free openbsd shell provider i help admin
+* _[devio.us](http://devio.us)_ - free openbsd shell provider i help admin   
+* _[github page](http://kisom.github.com)_ - github page   
 * _[main github](https://github.com/kisom)_ - my main github profile
 * _[bitbucket](http://git.kyleisom.net)_ - my bitbucket account
 * _[electronics github](https://github.com/brokenlcd)_ - my github profile 

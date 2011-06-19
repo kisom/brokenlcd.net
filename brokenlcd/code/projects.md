@@ -7,7 +7,7 @@ don't have to release restricted code under that license.
 
 newsread
 --------
-* [homepage](http://hg.kyleisom.net/newsread)    
+* [homepage](https://github.com/kisom/newsread)    
 * taking some of the NLP lessons from dropsonde and mining news sites for 
 articles i might actually want to read
 * project is in extreme infancy right now, most of the work in on paper
