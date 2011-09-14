@@ -5,6 +5,22 @@ all of my code is released under a bsd or isc/public domain dual-license
 unless otherwise noted. i despise the gpl and work very hard to ensure i
 don't have to release restricted code under that license.
 
+libdaemon
+---------
+* [homepage](./release/libdaemon/index.html)    
+* [github page](https://github.com/kisom/libdaemon)     
+* lightweight daemonisation library for openbsd and linux     
+* may run on other operating systems, particularly the bsd flavours, but this
+has not been checked.    
+* first real use of the autotools and texinfo as a build system    
+
+lurker
+------
+* [homepage](https://github.com/kisom/lurker)    
+* an irc logging daemon written in c    
+* in progress, but backgrounded while i work on libdaemon, as it uses that 
+library for daemonisation.    
+
 newsread
 --------
 * [homepage](https://github.com/kisom/newsread)    
