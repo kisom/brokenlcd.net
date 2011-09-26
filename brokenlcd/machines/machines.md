@@ -10,14 +10,14 @@ i've been moving to a point in my life where i'm trying to condense
 hardware. i'm down to the following:
 
 
-straylight
+ono-sendai
 ----------
 a lenovo thinkpad t410 that is my primary development machine.
 * ubuntu server, heavily stripped down and running awesome
 * 2.6 ghz i5 
 * 4gb ram
 * 64gb internal ssd
-* 32gb ssd in the drivebay
+* 512gb sata in the drivebay
 
 
 gibson
@@ -33,17 +33,13 @@ and molly.
 * 2tb external backup drive
 
 
-ono-sendai
+straylight
 ----------
-eeepc 1101hab dual-booting debian squeeze and openbsd 4.8. i don't always
-like sitting at my desk to code, so this is my portable dev system. soon
-it should be replaced with a t410. i do have a huawei e220 gsm modem that
-i use to get internet on it when i'm on the light rail or bus.
-* debian squeeze / openbsd-4.8/i386
-* 1.33 ghz atom 
-* 2gb ram
-* 160gb disk space (the debian partition uses a dmcrypt'd serpent-256 
-encrypted root filesystem)
+2009 13" macbook pro, this is my laptop i know will just work.   
+* os x 10.7
+* 2.0 ghz c2d
+* 8gb ram
+* 120gb internal ssd
 
 
 shadow
@@ -56,6 +52,7 @@ firewalling system. forwards ssh to shiva and silc to kali.
 * 4gb cf card
 * vpn1401 hardware cryptographic accelerator
 
+the following machines are inactive right while i am out of the country:
 
 neil
 ----

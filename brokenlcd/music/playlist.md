@@ -6,6 +6,7 @@ soundtrack (which was never on cd) i keep a copy of each of these cds
 available, and this is the core collection (ripped to flac) stored on my
 dev machines.
 
+* deftones - white pony
 * emiliana torrini - love in the time of science
 * faithless - outrospective
 * faithless - reverence
@@ -17,6 +18,8 @@ dev machines.
 * pink floyd - dark side of the moon
 * radiohead - amnesiac
 * radiohead - ok computer
+* sneaker pimps - becoming x    
+* sneaker pimps - bloodsport    
 * sneaker pimps - splinter
 * uplink soundtrack    
 

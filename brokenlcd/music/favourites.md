@@ -3,6 +3,7 @@ favourite albums
 
 inspired by the section on the uplink developer's cd, which was an 
 my first real look at basement programmers doing something useful.
+these are albums i really never get tired of.
 
 _uplink soundtrack_
 -------------------
@@ -28,4 +29,5 @@ late nights lost in the green and black, reading zines and chilling in irc.
 one of my early machines was a 486 running freedos, and i spent a lot of
 time in x86 assembly listening to these two albums.
 
+_radiohead - ok computer_    
 

@@ -1,4 +1,6 @@
 .*.swp
 *.static
-
+.\#*
+\#*
+*~
 brokenlcd/writing/tutorials/.DS_Store

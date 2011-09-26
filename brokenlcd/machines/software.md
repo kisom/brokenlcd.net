@@ -24,18 +24,25 @@ written most webpages are.
 * [links](http://links.sourceforge.net) - minimal text www browser 
 supporting frames. links2 even has a graphical mode and supports javascript,
 if that's your thing.
-* [fluxbox](http://www.fluxbox.org) - one of the two window managers i 
-happily use. dead simple configuration (but highly customisable) through
-_flat_ files, not xml-crap.
-* [awesome](http://awesome.naquadah.org) - the other window manager i use
-happily. the lua scripting is pretty cool.
-* [zsh](http://www.zsh.org) - i spend far too much time in zsh.
+* [xxxterm](https://opensource.conformal.com/wiki/XXXTerm) - a lightweight
+(except for webkit) browser with vim keybindings. i was hooked as soon as 
+i gave it a shot.    
+* [scrotwm](https://opensource.conformal.com/wiki/scrotwm) - a tiling window
+manager that i started using in 2011. it has the tiling i've come to love from
+awesome but is more lightweight and supports a more easily-customised 
+statusbar.     
+* [fluxbox](http://www.fluxbox.org) -  i used fluxbox as my window manager for 
+close to eight years before i found awesome. dead simple configuration (but 
+highly customisable) through _flat_ files, not xml-crap.    
+* [awesome](http://awesome.naquadah.org) - i switched from fluxbox to awesome
+in mid-2010. the lua scripting is pretty cool, and tiling windows managers
+are great.    
+* [zsh](http://www.zsh.org) - i spend far too much time in zsh.     
 * [irssi](http://www.irssi.org) - there are other irc clients out there?
 (although i have been thinking about giving 
 [ii](http://tools.suckless.org/ii/) a shot.) irssi has plugins supporting
 silc and otr, however. combined with [bitlbee](http://www.bitlbee.org),
-it is extremely useful to me. i don't use any fancy themes or scripts 
-though (although some scripts are forthcoming).
+it is extremely useful to me. 
 * [snownews](http://kiza.kcore.de/software/snownews/) - rss reader of 
 choice, perfect for keeping up on [undeadly](http://www.undeadly.org) and
 [hacker news](http://news.ycombinator.com).
@@ -58,10 +65,14 @@ on a thinkpad t20 in 2005.
 
 the operating systems i prefer:
 * **[openbsd](http://www.openbsd.org)** - definitely the favourite. 
-well-coded, thoroughly audited, done right.
+well-coded, thoroughly audited, done right. this is currently running as my
+primary 'get-shit-done' operating system.
 * **[debian](http://www.debian.org)** - _ahem_... i don't always use linux, but when i do, i use debian.
 * **[haiku](http://www.haiku-os.org)** - it's not beos but it looks and 
 feels a lot like it. it is still quite rough around the edges, so it's not
 suitable for use a primary desktop.
+* **os x** - not free, but unix under the hood and just works. i use this as 
+my spare laptop, set up for development work and doing ios dev, and used for
+multimedia and browsing.    
 
 

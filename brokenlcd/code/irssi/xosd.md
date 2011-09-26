@@ -30,7 +30,7 @@ example commands:
     /xosd clear
     /xosd save ~/.xosdrc
 
-the current settings may be viewed using `/set xosd_`
+the current settings may be viewed using `/set xosd_*`
 
 **setting the position**:
 * the current position is controlled by `xosd_position`

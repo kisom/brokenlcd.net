@@ -8,4 +8,5 @@ supported (tested) operating systems: openbsd, linux
 the manual is online as a [pdf](files/libdaemon.pdf) and as 
 [html](files/libdaemon.html/index.html).    
 
+the source is available on [github](https://github.com/kisom/libdaemon).    
 

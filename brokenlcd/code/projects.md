@@ -5,6 +5,19 @@ all of my code is released under a bsd or isc/public domain dual-license
 unless otherwise noted. i despise the gpl and work very hard to ensure i
 don't have to release restricted code under that license.
 
+dystopia
+--------
+* [bitbucket page](https://bitbucket.org/kisom/dystopialib)    
+* front end for the dystopia library (my personal docstore)   
+* being developed in perl and c - perl for rapid prototyping, c for the
+production system
+
+lurker
+-----
+* [homepage](./release/lurker/index.html)    
+* [github page](https://github.com/kisom/lurker)    
+* simple irc logging daemon
+
 libdaemon
 ---------
 * [homepage](./release/libdaemon/index.html)    
@@ -39,12 +52,6 @@ i've taken on myself to realise the computer in hardware.
 * [tecs solutions](https://github.com/kisom/tecs/)
 * logic implemented entirely in NAND gates
 * progress updated on [my blog](http://www.kyleisom.net/blog/)  
-
-android development
--------------------
-i just started learning how to android development, which is also 
-requiring a side trip into learning java, unfortunately. my primary
-interests are in geolocation and augmented reality.
 
 overlord
 --------
