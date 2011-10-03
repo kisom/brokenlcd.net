@@ -3,6 +3,9 @@
 
 [projects](projects.html) - some of the projects i've been working on
 
+[release](release/index.html) - released code and documentation (or
+major works in progress)
+
 [activity](activity.html) - rss feeds from various coding sites
 
 [basement](basement/index.html) - where i shove all the code that doesn't 

@@ -13,7 +13,7 @@ dystopia
 production system
 
 lurker
------
+------
 * [homepage](./release/lurker/index.html)    
 * [github page](https://github.com/kisom/lurker)    
 * simple irc logging daemon
@@ -26,13 +26,6 @@ libdaemon
 * may run on other operating systems, particularly the bsd flavours, but this
 has not been checked.    
 * first real use of the autotools and texinfo as a build system    
-
-lurker
-------
-* [homepage](https://github.com/kisom/lurker)    
-* an irc logging daemon written in c    
-* in progress, but backgrounded while i work on libdaemon, as it uses that 
-library for daemonisation.    
 
 newsread
 --------
@@ -60,16 +53,6 @@ overlord
 * ncurses UI with xosd notifications
 * sqlite3-backed
 * collaboration with wally jones
-
-rawk
-----
-* [homepage](http://rawk.brokenlcd.net)
-* rawk == **r**age **a**gainst **w**eb framewor**k**s
-* name was originally going to be rawf but that doesn't sound as euphonious
-* stable and runs on a variety of systems
-* this site is built using rawk
-* see [site](/site.html) for more than you could possibly want to know
-
 
 surfraw
 -------
@@ -157,16 +140,27 @@ file (see man 8 release in the openbsd documentation).
 insert the sparc bootloader.
 
 
+
+inactive projects
+=================
 woofs
 -----
 * [github page](https://github.com/kisom/woofs)
 * python script duplicating the functionality of simon budig's woof script
 * operates over https instead of http
-* in progress
+* completed (mostly, still no SSL fingerprint support)
 
 
-inactive projects
-=================
+rawk
+----
+* [homepage](http://rawk.brokenlcd.net)
+* rawk == **r**age **a**gainst **w**eb framewor**k**s
+* name was originally going to be rawf but that doesn't sound as euphonious
+* stable and runs on a variety of systems
+* this site is built using rawk
+* see [site](/site.html) for more than you could possibly want to know
+
+
 
 apod_py
 -------

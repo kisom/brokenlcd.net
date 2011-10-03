@@ -13,7 +13,7 @@ hardware. i'm down to the following:
 ono-sendai
 ----------
 a lenovo thinkpad t410 that is my primary development machine.
-* ubuntu server, heavily stripped down and running awesome
+* openbsd-5.0/amd64 running scrotwm    
 * 2.6 ghz i5 
 * 4gb ram
 * 64gb internal ssd
