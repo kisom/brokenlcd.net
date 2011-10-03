@@ -1,0 +1,37 @@
+{
+	"settings" : {
+		"id" : "kyle",
+		"name" : "kyle isom",
+		"avatar" : "http://is.gd/JZ3Pcw?s=140",
+		"disqus_shortname" : "kisom",
+		"enable_search" : true
+	},
+	"content" : {
+                "update profile"  : {
+                        "title"   : "update hackerhub profile",
+                        "content" : "https://gist.github.com/1258960"
+                },
+		"git commit" : {
+			"title"    : "github feed",
+			"type"     : "atom",
+			"content"  : "https://github.com/kisom.atom"
+		},
+		"hg commit"  : {
+			"title"    : "bitbucket feed",
+			"type"	   : "rss",
+ 			"content"  : 
+
+"https://bitbucket.org/kisom/rss/feed?token=17b80db2a1e2a2c036d4e953d8030d0d"
+		},
+		"blog" : {
+			"title"    : "It's All About the Kung-Fu",
+			"type"     : "rss",
+			"content"  : "http://www.kyleisom.net/blog/index.rss"
+		},
+		"@kyleisom" : {
+			"title"    : "@kyleisom",
+			"type"     : "twitter",
+			"username" : "kyleisom"
+                }
+        }
+}
