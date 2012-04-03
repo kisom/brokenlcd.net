@@ -4,3 +4,22 @@ writing
     finish why hack
     the beauty of coding
 
+fixes:
+    contact->irc
+    contact->openpgp
+    contact->silc
+    code->activity
+    code->releases->libdaemon
+    music->headphones
+    machines->machines
+    machines->software
+    links
+    writings
+
+    add dates to articles
+    writing/tutorials->crypto
+
+
+blacklist
+    *.json
+    stadard-license

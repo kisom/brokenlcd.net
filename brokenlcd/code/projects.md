@@ -5,12 +5,10 @@ all of my code is released under a bsd or isc/public domain dual-license
 unless otherwise noted. i despise the gpl and work very hard to ensure i
 don't have to release restricted code under that license.
 
-dystopia
+flexargs
 --------
-* [bitbucket page](https://bitbucket.org/kisom/dystopialib)    
-* front end for the dystopia library (my personal docstore)   
-* being developed in perl and c - perl for rapid prototyping, c for the
-production system
+* [github page](https://github.com/kisom/flexargs)
+* flexible argument parsing for objective c
 
 lurker
 ------
@@ -27,36 +25,10 @@ libdaemon
 has not been checked.    
 * first real use of the autotools and texinfo as a build system    
 
-newsread
---------
-* [homepage](https://github.com/kisom/newsread)    
-* taking some of the NLP lessons from dropsonde and mining news sites for 
-articles i might actually want to read
-* project is in extreme infancy right now, most of the work in on paper
-in my notebooks.
-
-percipio
---------
-working through 
-[the elements of computing systems](http://www1.idc.ac.il/tecs/) 
-but instead of just simulating the computer using the software tools,
-i've taken on myself to realise the computer in hardware.
-* [homepage](https://github.com/kisom/percipio/)
-* [tecs solutions](https://github.com/kisom/tecs/)
-* logic implemented entirely in NAND gates
-* progress updated on [my blog](http://www.kyleisom.net/blog/)  
-
-overlord
---------
-* [homepage](http://overlord.hack-net.org)
-* development name for a new task manager / calendar
-* ncurses UI with xosd notifications
-* sqlite3-backed
-* collaboration with wally jones
-
 surfraw
 -------
-* [homepage](http://surfraw.alioth.debian.org)
+* [homepage](http://www.surfraw.org)
+* as of 2012-03-15, i am now a committer on the surfraw project.
 * i've written several elvi:
 1. duckduckgo - i rewrote ianb's version of the duckduckgo elvi to
 include multiple improvements: defaulting to ssl search, javascript
@@ -78,26 +50,6 @@ tags and ask a question, among other options. this has not been confirmed
 for inclusion in any version yet.
 
 
-pymusiclib
-----------
-* [github page](https://github.com/kisom/pymusiclib)
-* python tools to handle music libraries. currently supported are:
-0. dedup.py - handles tag-based (and optionally hash-based, defaulting
-to the python-crypto md5 module)
-0. AudioFile - python class that includes a generic audio file metadata
-class supporting easier comparison between types of audio. including
-a magic file function to automatically handle a given file. currently
-supports mp3 and aac (mp4) audio files; flac support shouldn't be 
-too hard to add later on. also includes a number of tools to assist
-in comparing two audio files, including a select option that, given
-two AudioFile instances, returns the filename of the file that should
-be removed (but can be easily adapted to return the higher quality
-of the two).
-* in progress:
-0. orglib.py - tag-based music library organisation. currently a blank
-file in the repository, mostly to remind me to actually do something
-with it.
-
 irssi-scripts
 -------------
 * [github page](https://github.com/kisom/irssi-scripts)    
@@ -111,34 +63,6 @@ itun
 code is done.
 * confirmed working on openbsd
 * doesn't appear to work on linux; more testing / debugging is required
-
-
-login-fuzzer
-------------
-* [github page](https://github.com/kisom/Login-Fuzzer)
-* python script to bruteforce / fuzz logins
-* interface / engine pairing:
-0. interfaces are an interface to a login system, i.e. ssh. written 
-are an echo interface (for debugging / testing) and a python-paramiko
-interface for ssh logins.
-0. engines are password generating engines, i.e. bruteforce and fuzzing.
-* i wrote this because i locked myself out of one of my plug computers,
-which happened to not have a serial interface. even after a week of
-running this, i hadn't gotten in and sprung for a jtag adapter. i felt
-that by having written this, i had done enough penance.
-* the code would benefit greatly from threading or multiprocessing; i 
-haven't gotten around to that yet.
-
-
-build\_release
---------------
-* [github page](https://github.com/kisom/build_release)
-* perl script to build custom openbsd install isos based on a siteXX.tgz
-file (see man 8 release in the openbsd documentation).
-* works with intel architectures (i386 / amd64)
-* sparc support is planned, i need to learn how to get mkisofs to properly
-insert the sparc bootloader.
-
 
 
 inactive projects
@@ -160,6 +84,43 @@ rawk
 * this site is built using rawk
 * see [site](/site.html) for more than you could possibly want to know
 
+
+percipio
+--------
+working through 
+[the elements of computing systems](http://www1.idc.ac.il/tecs/) 
+but instead of just simulating the computer using the software tools,
+i've taken on myself to realise the computer in hardware.
+* [homepage](https://github.com/kisom/percipio/)
+* [tecs solutions](https://github.com/kisom/tecs/)
+* logic implemented entirely in NAND gates
+* progress updated on [my blog](http://www.kyleisom.net/blog/)  
+
+
+overlord
+--------
+* [homepage](http://overlord.hack-net.org)
+* development name for a new task manager / calendar
+* ncurses UI with xosd notifications
+* sqlite3-backed
+* collaboration with wally jones
+
+
+dystopia
+--------
+* [bitbucket page](https://bitbucket.org/kisom/dystopialib)    
+* front end for the dystopia library (my personal docstore)   
+* being developed in perl and c - perl for rapid prototyping, c for the
+production system
+
+
+newsread
+--------
+* [homepage](https://github.com/kisom/newsread)    
+* taking some of the NLP lessons from dropsonde and mining news sites for 
+articles i might actually want to read
+* project is in extreme infancy right now, most of the work in on paper
+in my notebooks.
 
 
 apod_py
@@ -197,6 +158,54 @@ sfe-mp3
 up my jtag adapter.
 * i also made minor revisions to the original sparkfun code, stored in
 [this github repo](https://github.com/kisom/sfe_mp3)
+
+
+login-fuzzer
+------------
+* [github page](https://github.com/kisom/Login-Fuzzer)
+* python script to bruteforce / fuzz logins
+* interface / engine pairing:
+0. interfaces are an interface to a login system, i.e. ssh. written 
+are an echo interface (for debugging / testing) and a python-paramiko
+interface for ssh logins.
+0. engines are password generating engines, i.e. bruteforce and fuzzing.
+* i wrote this because i locked myself out of one of my plug computers,
+which happened to not have a serial interface. even after a week of
+running this, i hadn't gotten in and sprung for a jtag adapter. i felt
+that by having written this, i had done enough penance.
+* the code would benefit greatly from threading or multiprocessing; i 
+haven't gotten around to that yet.
+
+
+build\_release
+--------------
+* [github page](https://github.com/kisom/build_release)
+* perl script to build custom openbsd install isos based on a siteXX.tgz
+file (see man 8 release in the openbsd documentation).
+* works with intel architectures (i386 / amd64)
+* sparc support is planned, i need to learn how to get mkisofs to properly
+insert the sparc bootloader.
+
+
+pymusiclib
+----------
+* [github page](https://github.com/kisom/pymusiclib)
+* python tools to handle music libraries. currently supported are:
+0. dedup.py - handles tag-based (and optionally hash-based, defaulting
+to the python-crypto md5 module)
+0. AudioFile - python class that includes a generic audio file metadata
+class supporting easier comparison between types of audio. including
+a magic file function to automatically handle a given file. currently
+supports mp3 and aac (mp4) audio files; flac support shouldn't be 
+too hard to add later on. also includes a number of tools to assist
+in comparing two audio files, including a select option that, given
+two AudioFile instances, returns the filename of the file that should
+be removed (but can be easily adapted to return the higher quality
+of the two).
+* in progress:
+0. orglib.py - tag-based music library organisation. currently a blank
+file in the repository, mostly to remind me to actually do something
+with it.
 
 
 other code
