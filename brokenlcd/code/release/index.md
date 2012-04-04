@@ -6,5 +6,4 @@ though they may be under development, they have reached a certain point of
 maturity.
 
 * [libdaemon](libdaemon/)
-* [lurker](lurker/)    
 

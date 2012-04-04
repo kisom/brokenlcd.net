@@ -23,3 +23,6 @@ this is why i release under a dual license. i would rather users have the
 freedom to do *whatever* with my code. if someone can take it and incorporate it
 into a great commercial product, that is a good thing because the software is
 being used actively.
+
+
+2011.09.14

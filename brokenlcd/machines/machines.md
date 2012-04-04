@@ -13,11 +13,20 @@ hardware. i'm down to the following:
 ono-sendai
 ----------
 a lenovo thinkpad t410 that is my primary development machine.
-* openbsd-5.0/amd64 running scrotwm    
+* freebsd-9.0/amd64 running scrotwm    
 * 2.6 ghz i5 
 * 4gb ram
 * 64gb internal ssd
 * 512gb sata in the drivebay
+
+
+voytek
+------
+a 2011 macbook 11" macbook air that i do a lot of stuff on.
+* os x 10.8
+* 1.6 ghz i5
+* 4gb ram
+* 64gb internal ssd
 
 
 gibson

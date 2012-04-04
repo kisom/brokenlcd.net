@@ -27,7 +27,7 @@ if that's your thing.
 * [xxxterm](https://opensource.conformal.com/wiki/XXXTerm) - a lightweight
 (except for webkit) browser with vim keybindings. i was hooked as soon as 
 i gave it a shot.    
-* [scrotwm](https://opensource.conformal.com/wiki/scrotwm) - a tiling window
+* [spectrwm](https://opensource.conformal.com/wiki/spectrwm) - a tiling window
 manager that i started using in 2011. it has the tiling i've come to love from
 awesome but is more lightweight and supports a more easily-customised 
 statusbar.     
@@ -43,14 +43,6 @@ are great.
 [ii](http://tools.suckless.org/ii/) a shot.) irssi has plugins supporting
 silc and otr, however. combined with [bitlbee](http://www.bitlbee.org),
 it is extremely useful to me. 
-* [snownews](http://kiza.kcore.de/software/snownews/) - rss reader of 
-choice, perfect for keeping up on [undeadly](http://www.undeadly.org) and
-[hacker news](http://news.ycombinator.com).
-* [abook](http://abook.sourceforge.net) - address book application.
-* [calcurse](http://culot.org/calcurse) - curses-based task lists, events,
-and calender.
-* [conky](http://conky.sourceforge.net) - a lightweight system monitor.   
-
 
 _operating systems_
 -------------------
@@ -64,13 +56,11 @@ redhat, mandrake (before it was mandrivia), before going back to netbsd
 on a thinkpad t20 in 2005. 
 
 the operating systems i prefer:
+* **[freebsd](http://www.freebsd.org)** - this is what i run on my main dev
+laptop. solid bsd code, compatibility in many areas with linux.
 * **[openbsd](http://www.openbsd.org)** - definitely the favourite. 
-well-coded, thoroughly audited, done right. this is currently running as my
-primary 'get-shit-done' operating system.
+well-coded, thoroughly audited, done right. 
 * **[debian](http://www.debian.org)** - _ahem_... i don't always use linux, but when i do, i use debian.
-* **[haiku](http://www.haiku-os.org)** - it's not beos but it looks and 
-feels a lot like it. it is still quite rough around the edges, so it's not
-suitable for use a primary desktop.
 * **os x** - not free, but unix under the hood and just works. i use this as 
 my spare laptop, set up for development work and doing ios dev, and used for
 multimedia and browsing.    

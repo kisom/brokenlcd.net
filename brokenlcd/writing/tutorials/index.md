@@ -8,5 +8,5 @@ various tutorials i wrote for various things.
 setting up an openbsd system as a transparent filtering bridge
 
 offsite links:     
-* [introduction to crypto in python with pycrypto](https://github.com/kisom/crypto_intro) - an
+* [introduction to crypto in python with pycrypto](http://kyleisom.net/blog/2011/06/17/intro-to-crypto/)
 intro to the pycrypto library and cryptography in general

@@ -21,7 +21,7 @@ I rather like. they came with a microphone but i don't use the mic ever.
 headphones. excellent base, extremely comfortable, and very good at blocking
 out a lot of ambient noise. 
 
-* i also use a [FiiO E5](http://www.fiio.com.cn/product/index.aspx?ID=6&MenuID=020301)
+* i also use a [FiiO E7](http://www.fiio.com.cn/product/index.aspx?ID=28&MenuID=020301)
 portable headphone amplifier at work, which does an excellent job of
 providing better sound at lower levels and helping me drown out coworkers
 who talk quite loudly by my cubicle.

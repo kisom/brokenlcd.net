@@ -14,3 +14,5 @@ bl="$bl ^styles$"               # don't link to styles dir
 bl="$bl ^restrict$ ^private$"   # don't link to private files
 bl="$bl ^index.md$"             # don't link to index
 bl="$bl ^index.html$"           # don't link to index
+bl="$bl ^..*\.json$"            # don't link to json files
+bl="$bl ^standard-license.txt$" # don't link to license file

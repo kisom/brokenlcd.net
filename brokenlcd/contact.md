@@ -7,9 +7,8 @@ openpgp
 my openpgp key has current contact information in it.
 
 `development key:`
-    pub   4096R/B7B720D6 2010-10-30 [expires: 2015-10-29]  
-      fpr  9C2B BF53 FB89 50D4 554F  1708 35C8 B8B3 B7B7 20D6   
-    sub   4096R/F73968C2 2010-10-30 [expires: 2015-10-29]   
+    pub   4096R/63AD01BF 2011-06-18 [expires: 2014-01-02]
+      Key fingerprint = BDAD 4068 EF75 0A49 49CC  82A0 8705 DF24 63AD 01BF
 
 
 email
@@ -26,17 +25,17 @@ i hang out in various places on freenode, sometimes efnet. as i happen
 to be an admin for [devio.us](http://devio.us), i can usually be found
 in #devious. nicks include:
 
-* kisom\_
+* kyl
+* vimja
 * kisom\_dev
-* brokenlcd
-* brokenlcd0
 
-please note that i am _not_ kisom on irc.
+please note that i am _not_ kisom on freenode. i'm also kyle on mindcry
+and conformal's irc servers.
 
 
 silc
 ----
-i run a silc server at freeside.brokenlcd.net:706. it's pretty quiet.
+i run a silc server at deathstar.xen.prgmr.com:706. it's pretty quiet.
 
 
 xmpp/jabber:

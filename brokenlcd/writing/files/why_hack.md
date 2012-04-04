@@ -31,3 +31,6 @@ turns out to be well-defined
 and that is what i believe all of programming boils down to: structuring 
 data into a meaningful context; applying a specific perspective to the
 boolean haze to extract something meaningful.
+
+
+2011.02.02
