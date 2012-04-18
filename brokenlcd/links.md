@@ -2,7 +2,7 @@ __links__
 =========
 
 * _[personal site](http://www.kyleisom.net)_ - my personal site
-* _[blog](http://www.kyleisom.net/blog)_ - it's all about the kung-fu
+# _[tyrfingr](http://tyrfingr.errno61.net)_ - a unix projects portfolio
 * _[devio.us](http://devio.us)_ - free openbsd shell provider i help admin   
 * _[main github](https://github.com/kisom)_ - my main github profile
 * _[bitbucket](http://hg.kyleisom.net)_ - my bitbucket account
